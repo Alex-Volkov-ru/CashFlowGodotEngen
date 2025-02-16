@@ -115,3 +115,6 @@ rotation = -0.813323
 [node name="24" parent="." instance=ExtResource("9_i5dug")]
 position = Vector2(1089, 549)
 rotation = -0.87441
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.25

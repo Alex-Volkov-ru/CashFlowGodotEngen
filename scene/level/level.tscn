@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://cja2tjnfy8rfq"]
+[gd_scene load_steps=5 format=3 uid="uid://cja2tjnfy8rfq"]
 
 [ext_resource type="Script" path="res://scene/level/level.gd" id="1_2ms3s"]
 [ext_resource type="PackedScene" uid="uid://c36l6bfbseu05" path="res://scene/game_objects/gameboard/game_board.tscn" id="2_yrh0c"]
 [ext_resource type="Texture2D" uid="uid://c1v12els23ydc" path="res://assets/textures/bluefishka.png" id="3_tc3ii"]
+[ext_resource type="PackedScene" uid="uid://cnq50sncbyyil" path="res://scene/game_objects/Dice/dice.tscn" id="4_1oq1j"]
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_2ms3s")
@@ -16,3 +17,9 @@ texture = ExtResource("3_tc3ii")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(960, 541)
+
+[node name="Dice" parent="." instance=ExtResource("4_1oq1j")]
+position = Vector2(591, 217)
+scale = Vector2(2, 2)
+
+[connection signal="dice_has_rolled" from="Dice" to="GameBoard" method="_on_dice_dice_has_rolled"]

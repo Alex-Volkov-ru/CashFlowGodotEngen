@@ -10,12 +10,14 @@ var cell_type: String = "Base"  # Тип клетки (по умолчанию �
 func get_move_position() -> Vector2:
 	return move_point.global_position  # Возвращаем глобальные координаты MovePoint
 
+
 # Метод для обновления текста на клетке
 func update_label():
 	if label:
 		label.text = cell_type  # Устанавливаем текст
 	else:
 		print("Ошибка: Label не найден!")
+
 
 # Логика активации клетки
 func activate(player):
