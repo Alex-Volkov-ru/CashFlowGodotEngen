@@ -4,7 +4,7 @@ extends Node2D
 @export var game_space: Array[Node2D]
 var place: int = 0
 
-func _unhandled_input(event: InputEvent):
+func _unhandled_input(event: InputEvent) -> void:
 	if Input.is_action_just_pressed("ui_click"):
 		if game_space.is_empty():
 			print("Ошибка: game_space пуст!")
