@@ -6,20 +6,21 @@ extends Node2D
 @onready var timer: Timer = $Timer
 
 var place: int = 0
+var can_roll_dice: bool = true  # Флаг, можно ли кидать кубик
 
 
 func _on_dice_dice_has_rolled(roll: Variant) -> void:
 	#Строчка для тестинга клеток
 	#roll = 15
 	while roll != 0:
-		await (move(place))
+		await (move())
 		place += 1
 		roll -= 1
 		if place >= game_space.size():  # Если дошли до конца массива, сбрасываем индекс
 			place = 0
 
 
-func move(place)-> void:
+func move()-> void:
 	var tween = create_tween()
 	tween.tween_property(bluefishka, 'position', game_space[place].position, 1)
 	timer.start()

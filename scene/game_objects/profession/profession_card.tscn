@@ -1,0 +1,575 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhch4swms0db2"]
+
+[ext_resource type="Script" path="res://scene/game_objects/profession/profession_card.gd" id="1_b600d"]
+[ext_resource type="Resource" uid="uid://cdi81ikp3pwh3" path="res://scripts/professions/Автомеханик.tres" id="2_cusua"]
+
+[node name="ProfessionCard" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_b600d")
+base_profession = ExtResource("2_cusua")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -520.0
+offset_top = -520.0
+offset_right = 520.0
+offset_bottom = 520.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label_ProfessionName" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 15.0
+offset_top = 24.0
+offset_right = 137.0
+offset_bottom = 52.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Профессия :"
+
+[node name="player_name_label" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 564.0
+offset_top = 24.0
+offset_right = 686.0
+offset_bottom = 52.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Игрок:"
+
+[node name="target_label" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 15.0
+offset_top = 59.0
+offset_right = 137.0
+offset_bottom = 87.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Цель: "
+
+[node name="income_report_label" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 82.0
+offset_top = 97.0
+offset_right = 251.0
+offset_bottom = 125.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "ОТЧЕТ О ДОХОДАХ"
+
+[node name="income_label" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 114.0
+offset_top = 122.0
+offset_right = 283.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Доходы
+"
+
+[node name="Label_Salary" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 15.0
+offset_top = 152.0
+offset_right = 184.0
+offset_bottom = 180.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Зарплата:"
+
+[node name="Label_Interest" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 15.0
+offset_top = 192.0
+offset_right = 184.0
+offset_bottom = 220.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Проценты:"
+
+[node name="Label_RealEstate" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 15.0
+offset_top = 256.0
+offset_right = 184.0
+offset_bottom = 284.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Недвижимость:"
+
+[node name="Label_Dividends" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 15.0
+offset_top = 220.0
+offset_right = 184.0
+offset_bottom = 248.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Дивиденды:"
+
+[node name="Label_Business" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 15.0
+offset_top = 301.0
+offset_right = 184.0
+offset_bottom = 329.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Предприятия:"
+
+[node name="Label_PassiveIncome" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 498.0
+offset_top = 203.0
+offset_right = 689.0
+offset_bottom = 231.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Пасивный доход:"
+
+[node name="expenses_label" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 115.0
+offset_top = 377.0
+offset_right = 284.0
+offset_bottom = 405.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Расходы"
+
+[node name="Label_Taxes" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 8.0
+offset_top = 403.0
+offset_right = 177.0
+offset_bottom = 431.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Налоги:"
+
+[node name="Label_Mortgage" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 8.0
+offset_top = 436.0
+offset_right = 216.0
+offset_bottom = 464.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Выплата по ипотеке:"
+
+[node name="Label_EducationLoan" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 8.0
+offset_top = 467.0
+offset_right = 250.0
+offset_bottom = 495.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Выплата редит на образование:"
+
+[node name="Label_CarLoan" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 8.0
+offset_top = 500.0
+offset_right = 250.0
+offset_bottom = 528.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Выплата кредит на машину:"
+
+[node name="Label_CreditCardDebt" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 8.0
+offset_top = 530.0
+offset_right = 250.0
+offset_bottom = 558.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Выплата Кредитная карта:"
+
+[node name="Label_SmallLoans" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 8.0
+offset_top = 560.0
+offset_right = 250.0
+offset_bottom = 588.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Выплата Мелкие кредиты:"
+
+[node name="Label_OtherExpenses" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 8.0
+offset_top = 588.0
+offset_right = 250.0
+offset_bottom = 616.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Прочие расходы:"
+
+[node name="Label_TotalExpenses" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 507.0
+offset_top = 537.0
+offset_right = 749.0
+offset_bottom = 565.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Общий расход:"
+
+[node name="Label_ChildrenExpenses" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 8.0
+offset_top = 614.0
+offset_right = 250.0
+offset_bottom = 642.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Расходы на детей:"
+
+[node name="Active_Label_custom" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 112.0
+offset_top = 705.0
+offset_right = 354.0
+offset_bottom = 733.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Активы"
+
+[node name="Custom_credit_label" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 8.0
+offset_top = 642.0
+offset_right = 249.0
+offset_bottom = 661.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Выплата по банковскому кредиту:"
+
+[node name="Label_Savings" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 8.0
+offset_top = 732.0
+offset_right = 98.0
+offset_bottom = 751.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Сбережения:"
+
+[node name="Label_StockTotalValue" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 520.0
+offset_top = 756.0
+offset_right = 569.0
+offset_bottom = 775.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Сумма:"
+
+[node name="Label_StockPrice" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 480.0
+offset_top = 756.0
+offset_right = 529.0
+offset_bottom = 775.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "цена:"
+
+[node name="Label_StockName" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 8.0
+offset_top = 756.0
+offset_right = 168.0
+offset_bottom = 797.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Акции/Фонды/
+депозиты/Облигации"
+
+[node name="Label_StockCount" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 384.0
+offset_top = 756.0
+offset_right = 480.0
+offset_bottom = 775.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Число акций:"
+
+[node name="Passive_label_custom" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 680.0
+offset_top = 700.0
+offset_right = 1030.0
+offset_bottom = 728.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Пассивы"
+
+[node name="Label_MortgageBalance" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 680.0
+offset_top = 732.0
+offset_right = 1030.0
+offset_bottom = 760.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Закладная на дом:"
+
+[node name="Label_EducationLoanBalance" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 680.0
+offset_top = 764.0
+offset_right = 1030.0
+offset_bottom = 792.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Кредит на образование:"
+
+[node name="Label_CarLoanBalance" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 680.0
+offset_top = 796.0
+offset_right = 1030.0
+offset_bottom = 824.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Кредит на машину:"
+
+[node name="Label_CreditCardDebtBalance" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 680.0
+offset_top = 828.0
+offset_right = 1030.0
+offset_bottom = 856.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Долг по кредитным карточкам:"
+
+[node name="Label_SmallLoansBalance" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 680.0
+offset_top = 860.0
+offset_right = 1030.0
+offset_bottom = 888.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Долг по мелким кредитам:"
+
+[node name="Label_BankLoans" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 680.0
+offset_top = 972.0
+offset_right = 1030.0
+offset_bottom = 1000.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Банковский кредит:"
+
+[node name="Balance_sheet_label" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 416.0
+offset_top = 684.0
+offset_right = 552.0
+offset_bottom = 703.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Балансовый отечет"
+
+[node name="Label_RealEstateName" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 8.0
+offset_top = 844.0
+offset_right = 123.0
+offset_bottom = 872.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Недвижимость:"
+
+[node name="Label_BusinessAssets" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 8.0
+offset_top = 924.0
+offset_right = 61.0
+offset_bottom = 943.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Бизнес:"
+
+[node name="Label_RealEstatePrice" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 512.0
+offset_top = 836.0
+offset_right = 565.0
+offset_bottom = 855.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Цена:"
+
+[node name="Label_RealEstateDownPayment" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 384.0
+offset_top = 836.0
+offset_right = 482.0
+offset_bottom = 855.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Первый взнос:"
+
+[node name="Label_BusinessDownPayment" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 384.0
+offset_top = 916.0
+offset_right = 482.0
+offset_bottom = 935.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Первый взнос:"
+
+[node name="Label_BusinessPrice" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 512.0
+offset_top = 916.0
+offset_right = 565.0
+offset_bottom = 935.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Цена:"
+
+[node name="Label_TotalIncome" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 510.0
+offset_top = 322.0
+offset_right = 860.0
+offset_bottom = 350.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Общий доход:"
+
+[node name="Label_ChildExpensePerKid" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 510.0
+offset_top = 502.0
+offset_right = 860.0
+offset_bottom = 530.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Расход на одного ребенка:"
+
+[node name="Label_MonthlyCashflow" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 510.0
+offset_top = 597.0
+offset_right = 860.0
+offset_bottom = 656.0
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 11
+text = "Месяччный
+денежный поток:"

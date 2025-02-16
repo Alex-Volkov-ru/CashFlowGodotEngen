@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="BaseProfession" load_steps=2 format=3 uid="uid://cdi81ikp3pwh3"]
+
+[ext_resource type="Script" path="res://scripts/professions/base_profession.gd" id="1_xvei0"]
+
+[resource]
+script = ExtResource("1_xvei0")
+profession_name = "Автомеханик"
+salary = 2000
+interest = 0
+dividends = 0
+real_estate_income = 0
+business_income = 0
+taxes = 360
+mortgage_and_rent = 300
+education_loan = 0
+car_loan = 60
+credit_card_debt = 60
+small_loans = 50
+other_expenses = 450
+children_expenses = 0
+child_expense_per_kid = 110
+savings = 670
+stocks_and_bonds = []
+real_estate = []
+business = []
+mortgage_balance = 31000
+education_loan_balance = 0
+car_loan_balance = 3000
+credit_card_debt_balance = 2000
+small_loans_balance = 1000
+bank_loans = 0

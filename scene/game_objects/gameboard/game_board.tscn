@@ -117,4 +117,4 @@ position = Vector2(1089, 549)
 rotation = -0.87441
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 1.25
+one_shot = true

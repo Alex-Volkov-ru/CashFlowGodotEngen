@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="BaseProfession" load_steps=2 format=3 uid="uid://dbwq816qh3nlh"]
+
+[ext_resource type="Script" path="res://scripts/professions/base_profession.gd" id="1_lwr35"]
+
+[resource]
+script = ExtResource("1_lwr35")
+profession_name = "Неизвестная профессия"
+salary = 0
+interest = 0
+dividends = 0
+real_estate_income = 0
+business_income = 0
+taxes = 0
+mortgage_and_rent = 0
+education_loan = 0
+car_loan = 0
+credit_card_debt = 0
+small_loans = 0
+other_expenses = 0
+children_expenses = 0
+savings = 0
+stocks_and_bonds = 0
+real_estate = {}
+business = {}
+mortgage_balance = 0
+education_loan_balance = 0
+car_loan_balance = 0
+credit_card_debt_balance = 0
+small_loans_balance = 0
+bank_loans = 0
