@@ -15,10 +15,6 @@ run/main_scene="res://main_menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
-[autoload]
-
-YandexSDK="*res://addons/godot-yandex-games-sdk/yandex_sdk.gd"
-
 [display]
 
 window/size/viewport_width=1920
