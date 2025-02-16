@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cja2tjnfy8rfq"]
+
+[ext_resource type="Script" path="res://scene/level/level.gd" id="1_2ms3s"]
+[ext_resource type="PackedScene" uid="uid://c36l6bfbseu05" path="res://scene/game_objects/gameboard/game_board.tscn" id="2_yrh0c"]
+[ext_resource type="Texture2D" uid="uid://c1v12els23ydc" path="res://assets/textures/bluefishka.png" id="3_tc3ii"]
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_2ms3s")
+
+[node name="GameBoard" parent="." instance=ExtResource("2_yrh0c")]
+
+[node name="Bluefishka" type="Sprite2D" parent="." groups=["bluefishka"]]
+position = Vector2(703, 853)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_tc3ii")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(960, 541)
